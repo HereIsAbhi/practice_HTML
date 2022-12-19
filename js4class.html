@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1</title>
+</head>
+<body>
+    <!-- id and pwd should not be empty
+    pwd and id are right to check -->
+
+    <!-- <input type="text" id="id" value="id">
+    <label for="id"></label> -->
+    <p id="time">the current date and time is: <span id="timespan">current time</span> </p>
+    <input type="button" id="button" value="submit">
+    <script>
+        // function greet()
+        // {
+        //     console.log("Hello World")
+
+        // }
+        // let timeout= setTimeout(greet,5000) 
+        // // calling the function once
+        // // clearTimeout(timeout)
+        // let interval= setInterval(greet,1000);
+        // clearInterval(interval,5000)
+        function display(){
+            let timeDate= new Date();
+            console.log(timeDate);
+            document.getElementById("timespan").innerHTML= timeDate;
+
+        }
+        display()
+        setInterval(display,1000)
+
+
+
+    </script>
+</body>
+</html>
