@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginform</title>
+</head>
+<body>
+    <form action="">
+    Email: <input type="text" id="email" required> <br> <br><br>
+    Password: <input type="text" id="pass" required><br><br><br>
+    <button type="button" id="btn" >Login</button>
+    </form>
+    <script>
+        let emailentered = document.getElementById("email")
+        let passentered = document.getElementById("pass")
+        let button= document.getElementById("btn")
+        button.addEventListener("click",function(){
+            let email=emailentered.value;
+            let Password= passentered.value;
+            if (email=="admin" && Password==123){
+                console.log("logged in success")
+                alert("logged in success")
+            }
+            else{
+                alert("wrong password")
+            }
+
+
+        })
+
+    </script>
+
+
+    
+</body>
+
+
+</html>
